@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:proyek1/components/default_button.dart';
-import 'package:proyek1/models/Product.dart';
+import 'package:proyek1/models/Berita.dart';
 import 'package:proyek1/size_config.dart';
 import 'product_description.dart';
 import 'top_rounded_container.dart';

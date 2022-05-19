@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:proyek1/models/Product.dart';
+import 'package:proyek1/models/Berita.dart';
 import 'package:proyek1/screens/details/details_screen.dart';
 
 import '../constants.dart';

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:proyek1/components/product_card.dart';
-import 'package:proyek1/models/Product.dart';
+import 'package:proyek1/models/Berita.dart';
 
 import '../../../size_config.dart';
 import 'section_title.dart';
