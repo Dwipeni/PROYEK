@@ -21,10 +21,6 @@ class CartScreen extends StatelessWidget {
             "Riwayat",
             style: TextStyle(color: Colors.black),
           ),
-          // Text(
-          //   "${demoCarts.length} items",
-          //   style: Theme.of(context).textTheme.caption,
-          // ),
         ],
       ),
     );
