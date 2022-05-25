@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:proyek1/screens/cart/cart_screen.dart';
-
+import 'package:proyek1/screens/notification/notif_screen.dart';
 import '../../../size_config.dart';
 import 'icon_btn_with_counter.dart';
 import 'search_field.dart';
@@ -25,8 +25,8 @@ class HomeHeader extends StatelessWidget {
           ),
           IconBtnWithCounter(
             svgSrc: "assets/icons/Bell.svg",
-            numOfitem: 3,
-            press: () {},
+            numOfitem: 2,
+            press: () => Navigator.pushNamed(context, NotifScreen.routeName),
           ),
         ],
       ),
