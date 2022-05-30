@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:proyek1/screens/home/home_screen.dart';
 
 class PesanPage extends StatefulWidget {
   const PesanPage({Key? key}) : super(key: key);
@@ -28,7 +29,8 @@ class _PesanPageState extends State<PesanPage> {
         ),
         leading: IconButton(
           icon: const Icon(Icons.arrow_back),
-          onPressed: () {},
+          onPressed: () =>
+                    Navigator.pushNamed(context, HomeScreen.routeName),
         ),
       ),
       body: ListView(
@@ -83,7 +85,7 @@ class _PesanPageState extends State<PesanPage> {
                   Row(
                     children: const [
                       Text(
-                        'Gunakan Formulir ini untuk menghubungi kami',
+                        'Gunakan Formulir untuk menghubungi kami',
                         style: TextStyle(
                             fontSize: 16, fontWeight: FontWeight.w600),
                       ),

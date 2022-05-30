@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:proyek1/screens/home/home_screen.dart';
 import 'package:proyek1/screens/info/info_screen.dart';
+import 'package:proyek1/screens/pesan/PesanPage.dart';
 import 'package:proyek1/screens/profile/profile_screen.dart';
 
 import '../constants.dart';
@@ -61,7 +62,11 @@ class CustomBottomNavBar extends StatelessWidget {
               ),
               IconButton(
                 icon: SvgPicture.asset("assets/icons/Chat bubble Icon.svg"),
-                onPressed: () {},
+                onPressed: () =>
+                  Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (builder) => const PesanPage()))
               ),
               IconButton(
                 icon: SvgPicture.asset(
