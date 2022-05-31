@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:proyek1/components/product_card.dart';
+import 'package:proyek1/components/berita_card.dart';
 import 'package:proyek1/models/Berita.dart';
 
 import '../../../size_config.dart';
 import 'section_title.dart';
 
-class PopularProducts extends StatelessWidget {
+class PortalBerita extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -24,7 +24,7 @@ class PopularProducts extends StatelessWidget {
                 demoProducts.length,
                 (index) {
                   if (demoProducts[index].isPopular)
-                    return ProductCard(berita: demoProducts[index]);
+                    return BeritaCard(berita: demoProducts[index]);
 
                   return SizedBox
                       .shrink(); // here by default width and height is 0

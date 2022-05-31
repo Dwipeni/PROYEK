@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:proyek1/screens/notification/notif_screen.dart';
 
 import '../../../size_config.dart';
 
@@ -7,7 +8,7 @@ class Categories extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     List<Map<String, dynamic>> categories = [
-      {"icon": "assets/icons/vaksin.svg", "text": "Vaksinasi"},
+      {"icon": "assets/icons/vaksin.svg", "text": "Vaksinasi", /*"press": "NotifScreen.routeName"*/},
       {"icon": "assets/icons/calculate.svg", "text": "PBB"},
       {"icon": "assets/icons/paper.svg", "text": "Pengajuan Surat"},
       {"icon": "assets/icons/blt.svg", "text": "BLT"},
@@ -33,7 +34,8 @@ class Categories extends StatelessWidget {
           (index) => CategoryCard(
             icon: categories[index]["icon"],
             text: categories[index]["text"],
-            press: () {},
+            press: (){}
+            //press: () => Navigator.pushNamed(context, categories[index]["press"]),
           ),
         ),
       ),

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../size_config.dart';
 import 'info_header.dart';
-import 'popular_product.dart';
+import 'info_detail.dart';
 
 class Body extends StatelessWidget {
   @override
@@ -14,7 +14,7 @@ class Body extends StatelessWidget {
             SizedBox(height: getProportionateScreenHeight(20)),
             InfoHeader(),
             SizedBox(height: getProportionateScreenWidth(30)),
-            PopularProducts(),
+            Info(),
           ],
         ),
       ),
