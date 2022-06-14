@@ -8,6 +8,7 @@ import 'package:proyek1/screens/info/info_screen.dart';
 import 'package:proyek1/screens/login_success/login_success_screen.dart';
 import 'package:proyek1/screens/otp/otp_screen.dart';
 import 'package:proyek1/screens/pesan/PesanPage.dart';
+import 'package:proyek1/screens/pesan/pesan_success/pesan_success_screen.dart';
 import 'package:proyek1/screens/profile/profile_screen.dart';
 import 'package:proyek1/screens/sign_in/sign_in_screen.dart';
 import 'package:proyek1/screens/splash/splash_screen.dart';
@@ -30,5 +31,6 @@ final Map<String, WidgetBuilder> routes = {
   NotifScreen.routeName: (context) => NotifScreen(),
   DetailsScreen.routeName: (context) => DetailsScreen(),
   CartScreen.routeName: (context) => CartScreen(),
-  ProfileScreen.routeName: (context) => ProfileScreen()
+  ProfileScreen.routeName: (context) => ProfileScreen(),
+  PesanSuccessScreen.routeName: (context) => PesanSuccessScreen(),
 };

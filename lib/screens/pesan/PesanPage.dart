@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:proyek1/screens/home/home_screen.dart';
+import 'package:proyek1/screens/pesan/pesan_success/pesan_success_screen.dart';
 
 class PesanPage extends StatefulWidget {
   const PesanPage({Key? key}) : super(key: key);
@@ -213,7 +214,9 @@ class _PesanPageState extends State<PesanPage> {
       height: 50,
       padding: const EdgeInsets.only(top: 20, left: 120, right: 110),
       child: TextButton(
-        onPressed: () {},
+        onPressed: () {
+          Navigator.pushNamed(context, PesanSuccessScreen.routeName);
+        },
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: const [
